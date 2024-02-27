@@ -1,8 +1,34 @@
 .main{
   width: 100vW;
   height: 100vH;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 100px;
+  display: grid;
+  grid-template-areas:
+    'title title title'
+    'button button sidebar'
+    'display display sidebar';
+
+}
+
+.display{
+  padding: 20px;
+  font-size: 70px;
+
+  grid-area: display;
+}
+
+.title{
+  text-align: center;
+  grid-area: title;
+}
+
+.button{
+  align-self: center;
+
+  grid-area: button;
+
+}
+
+.sidebar{
+  width: 20vW;
+  grid-area: sidebar;
 }
