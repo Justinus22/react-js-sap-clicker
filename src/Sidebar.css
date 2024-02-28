@@ -1,0 +1,17 @@
+.sidebarContainer{
+    margin:10px; 
+}
+
+.title{
+    text-decoration: underline;
+}
+
+.upgrades{
+    padding: 10px;
+}
+
+.upgradeClick{
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+}

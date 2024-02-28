@@ -5,15 +5,12 @@ export default function ClickButton(props) {
   
 
   function buttonClicked(){
-    props.setRevenue((prevRevenue) => prevRevenue+1)
+    props.setRevenue((prevRevenue) => prevRevenue+props.clickMult)
   }
   
   return (
-    <div>
+    <div className='buttonContainer'>
        <img src="logo.png"  className='logo' alt="SAP" onClick={buttonClicked} />
     </div>
   );
 }
-
-// Log to console
-console.log('Hello console')

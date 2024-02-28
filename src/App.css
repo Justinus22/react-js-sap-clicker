@@ -1,34 +1,77 @@
+@font-face {
+  font-family: 'SAPFont'; /*a name to be used later*/
+  src: url('WOFF/72BrandVariable_Lt-Bd.woff'); /*URL to font*/
+}
+
+html, body{
+  margin:0;
+  padding:0;
+
+  font-family: SAPFont;
+}
+
 .main{
   width: 100vW;
   height: 100vH;
   display: grid;
+  grid-template-rows: 0.1fr 1fr 0.3fr;
   grid-template-areas:
     'title title title'
     'button button sidebar'
     'display display sidebar';
+  margin: 0;
 
+  background-color: #D1EFFF;
 }
 
 .display{
   padding: 20px;
-  font-size: 70px;
+  font-size: 30px;
 
   grid-area: display;
+
+  display: grid;
+  align-items: center;
+  justify-content: center;
 }
 
 .title{
   text-align: center;
   grid-area: title;
+
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.titleTextContainer{
+  color: #00144A;
+  background-color: white;
+  padding: 20px;
+  margin:0;
+
+  border-radius: 30px;
+
+
 }
 
 .button{
   align-self: center;
 
   grid-area: button;
-
+  height: 100%;
+  display: grid;
+  align-items: center;
+  justify-content: center;
 }
 
 .sidebar{
-  width: 20vW;
   grid-area: sidebar;
+  width: 100%;
+  padding:10px;
+  border: dotted 2px;
+  border-top-left-radius: 30px;
+
+  background-color: #89D1FF;
+
 }

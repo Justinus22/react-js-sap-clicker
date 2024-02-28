@@ -1,3 +1,31 @@
 .logo{
-    width: 200px
+    width: 40vW
 }
+
+.buttonContainer{
+    transition: 0.3s;
+}
+
+.buttonContainer:hover{
+    scale: 1.1;
+}
+
+.buttonContainer:focus{
+    background-color: blue;
+    
+}
+.buttonContainer:active{
+    animation: click 0.1s ease;
+}
+
+
+@keyframes click {
+    from {
+        transform: scale(1, 1);
+    }
+    to{
+    
+        transform: scale(0.8, 0.8);
+    }
+  }
+  
